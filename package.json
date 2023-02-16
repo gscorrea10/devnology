@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "tsx ./src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx ./src/server.ts",
     "dev:watch": "tsx watch ./src/server.ts"
