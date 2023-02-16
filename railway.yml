@@ -4,9 +4,8 @@ build:
   builder: 'node:16'
   steps:
     - run: npm install
-    - build: ./
 run:
-  web: npm run start
+  web: npm start
 services:
   database:
     image: postgres:10
@@ -20,11 +19,10 @@ services:
   app:
     build:
       dockerfile: Dockerfile
-    command: node index.js
+    command: npm start
     env:
       DATABASE_URL: postgres://root:password@database:5432/devnology
     depends_on:
       - database
     ports:
       - 8080:8080
-    worker: node worker.js
