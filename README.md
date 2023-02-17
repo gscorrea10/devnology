@@ -13,6 +13,7 @@
 
 ## Como executar:
 
+- Vá até o diretório raiz do projeto ```cd devnology```
 - Instale as dependências com ```npm install```;
 - Inicie o container do banco de dados com ```docker compose up```;
 - Rodar todas as migrations do prisma com ```npx prisma migrate dev```;
